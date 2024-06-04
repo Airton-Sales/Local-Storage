@@ -64,6 +64,10 @@ button{
     font-weight: 700;
 }
 
+.delete{
+    margin-left:10px;
+}
+
 button:hover{
     opacity: 0.8;
 }
@@ -72,4 +76,24 @@ button:hover{
     text-decoration: line-through;
     opacity: 0.5;
     color:black;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+li.completed{
+    text-decoration: line-through;
+    text-decoration-color: white;
+    text-decoration-thickness: 2px;
+    font-weight: bold;
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+
+li.completed:hover {
+    text-decoration: none;
 }
